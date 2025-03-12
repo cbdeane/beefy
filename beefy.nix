@@ -12,7 +12,7 @@ writeShellScriptBin "beefy" ''
 #####################################################################
 
 
-commithash=42d0b0ded29ebd8823583472544b68e642593a6d
+commithash=0f98a16e9cfb74e5b910e566817bb6752d6ca515
 url=github:cbdeane/dev_flakes/''${commithash}?dir=
 
 
@@ -76,25 +76,25 @@ jdk21()
 
 python_3_11()
 {
-	nix flake init -t ''${url}python_3_11/python_3_11_template
+	nix flake init -t ''${url}python/python_3_11_template
 	direnv allow
 }
 
 python_3_12()
 {
-	nix flake init -t ''${url}python_3_12/python_3_12_template
+	nix flake init -t ''${url}python/python_3_12_template
 	direnv allow
 }
 
 python_3_13()
 {
-	nix flake init -t ''${url}python_3_13/python_3_13_template
+	nix flake init -t ''${url}python/python_3_13_template
 	direnv allow
 }
 
 python_3_14()
 {
-	nix flake init -t ''${url}python_3_14/python_3_14_template
+	nix flake init -t ''${url}python/python_3_14_template
 	direnv allow
 }
 
