@@ -80,6 +80,24 @@ python_3_11()
 	direnv allow
 }
 
+python_3_12()
+{
+	nix flake init -t ''${url}python_3_12/python_3_12_template
+	direnv allow
+}
+
+python_3_13()
+{
+	nix flake init -t ''${url}python_3_13/python_3_13_template
+	direnv allow
+}
+
+python_3_14()
+{
+	nix flake init -t ''${url}python_3_14/python_3_14_template
+	direnv allow
+}
+
 #####################################################################
 # initialize rust template from github repo
 #####################################################################
@@ -131,6 +149,15 @@ process_args() {
 	    ;;
 	python_3_11)
 	    python_3_11
+	    ;;
+	python_3_12)
+	    python_3_12
+	    ;;
+	python_3_13)
+	    python_3_13
+	    ;;
+	python_3_14)
+	    python_3_14
 	    ;;
 	rustc_cargo)
 	    rustc_cargo
