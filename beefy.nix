@@ -180,7 +180,7 @@ process_args() {
 	    echo "python_3_12"
 	    echo "python_3_13"
 	    echo "python_3_14"
-	    echo "rustc_cargo"
+	    echo "rust"
 	    echo "zig_0_11"
 	    echo "zig_0_12"
 	    ;;
