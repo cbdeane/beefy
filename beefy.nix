@@ -104,7 +104,7 @@ python_3_14()
 
 rustc_cargo()
 {
-	nix flake init -t ''${url}rustc_cargo/rustc_cargo_template
+	nix flake init -t ''${url}rust/rustc_cargo_template
 	direnv allow
 }
 
@@ -159,7 +159,7 @@ process_args() {
 	python_3_14)
 	    python_3_14
 	    ;;
-	rustc_cargo)
+	rust)
 	    rustc_cargo
 	    ;;
 	zig_0_11)
