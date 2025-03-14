@@ -12,7 +12,7 @@ writeShellScriptBin "beefy" ''
 #####################################################################
 
 
-commithash=0f98a16e9cfb74e5b910e566817bb6752d6ca515
+commithash=5eeaf567b31670bd5134b834d03a8b5cb2b66d98
 url=github:cbdeane/dev_flakes/''${commithash}?dir=
 
 
@@ -124,6 +124,12 @@ zig_0_12()
 	direnv allow
 }
 
+dotnet_9()
+{
+	nix flake init -t ''${url}csharp/dotnet_9_template
+	direnv allow
+}
+
 
 #####################################################################
 #####################################################################
@@ -140,6 +146,9 @@ process_args() {
 	    ;;
 	c)
 	    c
+	    ;;
+	dotnet_9)
+	    dotnet_9
 	    ;;
 	go_1_23)
 	    go_1_23
