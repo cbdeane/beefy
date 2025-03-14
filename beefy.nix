@@ -183,6 +183,7 @@ process_args() {
 	    echo ""
 	    echo "node22"
 	    echo "c"
+	    echo "dotnet_9"
 	    echo "go_1_23"
 	    echo "jdk21"
 	    echo "python_3_11"
