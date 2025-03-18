@@ -130,6 +130,20 @@ dotnet_9()
 	direnv allow
 }
 
+webpack()
+{
+    npm install --save-dev webpack webpack-cli
+    npm install --save-dev html-webpack-plugin
+    npm install --save-dev style-loader css loader
+    npm install --save-dev html-loader
+    npm install --save-dev webpack-dev-server
+}
+
+webserve()
+{
+    npx webpack serve
+}
+
 
 #####################################################################
 #####################################################################
@@ -141,9 +155,6 @@ dotnet_9()
 
 process_args() {
     case $1 in
-	node22)
-	    node22
-	    ;;
 	c)
 	    c
 	    ;;
@@ -155,6 +166,9 @@ process_args() {
 	    ;;
 	jdk21)
 	    jdk21
+	    ;;
+	node22)
+	    node22
 	    ;;
 	python_3_11)
 	    python_3_11
@@ -171,6 +185,12 @@ process_args() {
 	rust)
 	    rustc_cargo
 	    ;;
+	webpack)
+	    webpack
+	    ;;
+	webserve)
+	    webserve
+	    ;;
 	zig_0_11)
 	    zig_0_11
 	    ;;
@@ -181,16 +201,18 @@ process_args() {
 	    echo ""
 	    echo "Options:"
 	    echo ""
-	    echo "node22"
 	    echo "c"
 	    echo "dotnet_9"
 	    echo "go_1_23"
 	    echo "jdk21"
+	    echo "node22"
 	    echo "python_3_11"
 	    echo "python_3_12"
 	    echo "python_3_13"
 	    echo "python_3_14"
 	    echo "rust"
+	    echo "webpack"
+	    echo "webserve"
 	    echo "zig_0_11"
 	    echo "zig_0_12"
 	    ;;
