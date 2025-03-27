@@ -56,7 +56,7 @@ c()
 
 go_1_23()
 {
-	nix flake init -t ''${url}go_1_23/go_1_23_template
+	nix flake init -t ''${url}go/go_1_23_template
 	direnv allow
 }
 
