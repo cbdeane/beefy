@@ -12,7 +12,7 @@ writeShellScriptBin "beefy" ''
 #####################################################################
 
 
-commithash=5eeaf567b31670bd5134b834d03a8b5cb2b66d98
+commithash=b83434ed590f30e4f334b73253cdb9f80a58da4a
 url=github:cbdeane/dev_flakes/''${commithash}?dir=
 
 
