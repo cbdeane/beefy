@@ -66,7 +66,7 @@ go_1_23()
 
 jdk21()
 {
-	nix flake init -t ''${url}java/jdk21_template
+	nix flake init -t ''${url}java/jdk_21_template
 	direnv allow
 }
 
